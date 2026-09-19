@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title> Tuff Casino — DEMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+<div id="app">
+<header class="topbar">
+  <div class="brand"><div class="Tuff">◒</div><div><b>PLANETA</b><span>CASINO</span></div></div>
+  <div class="top-actions"><div class="demo-pill">DEMO</div><div class="balance-pill">◈ <b id="balance">0.00</b> TON</div></div>
+</header>
+
+<section class="hero">
+  <div><div class="eyebrow">✦ DEMO-ВЕРСИЯ</div><h1>Открывай кейсы.<br><span>Лови редкие NFT.</span></h1><p>Весь каталог крутится в одном ролике, а результат определяется заданными шансами.</p><button class="primary" onclick="scrollToCases()">Смотреть кейсы <span>→</span></button></div>
+  <div class="hero-case"><img src="assets/cases/mystic.png" alt="Кейс"></div>
+</section>
+
+<div class="feature-row"><div>◈<span><b>TON-награды</b><small>мгновенный демо-результат</small></span></div><div>✦<span><b>Уникальные NFT</b><small>тематические коллекционные предметы</small></span></div><div>↻<span><b>Честные шансы</b><small>100% по заданной таблице</small></span></div></div>
+
+<section id="casesSection" class="section"><div class="section-title"><div><div class="eyebrow">КАТАЛОГ</div><h2>Кейсы</h2></div><span class="muted">10 кейсов · DEMO</span></div><div id="casesGrid" class="cases-grid"></div></section>
+
+<section id="caseSection" class="section hidden">
+  <button id="backButton" class="back">← Вернуться к каталогу</button>
+  <div class="case-header"><div class="case-cover"><img id="caseIcon" alt=""></div><div class="case-meta"><div class="eyebrow">ОТКРЫТИЕ КЕЙСА</div><h2 id="caseName"></h2><div class="case-price" id="casePrice"></div><p>Демо-режим: баланс не списывается.</p></div></div>
+  <div class="opening-card">
+    <div class="opening-top"><div><b>Открытие кейса</b><small id="openingHint">Вращаем весь каталог наград…</small></div><span id="openingStatus">ГОТОВО</span></div>
+    <div class="reel-wrap"><div class="reel-pointer"></div><div id="reel" class="reel"></div></div>
+    <button id="openButton" class="primary open">Открыть демо-кейс <span>↻</span></button>
+    <div id="result" class="result hidden"></div>
+  </div>
+  <div class="section-title rewards-title"><div><div class="eyebrow">ТАБЛИЦА ШАНСОВ</div><h2>Что может выпасть</h2></div></div>
+  <div id="rewardsGrid" class="prob-grid"></div>
+</section>
+
+<footer> TUFF CASINO · BEST </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
